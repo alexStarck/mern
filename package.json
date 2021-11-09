@@ -1,0 +1,14 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "web": "npm run start --prefix web",
+    "server": "npm run start --prefix server",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run web\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

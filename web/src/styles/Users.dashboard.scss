@@ -1,0 +1,61 @@
+
+
+.dash_users .p-datatable-responsive .p-datatable-tbody > tr > td .p-column-title {
+  display: none;
+}
+
+@media screen and (max-width: 40em) {
+  .dash_users .p-datatable.p-datatable-responsive .p-datatable-thead > tr > th,
+  .dash_users .p-datatable.p-datatable-responsive .p-datatable-tfoot > tr > td {
+    display: none !important;
+  }
+
+  .dash_users .p-datatable.p-datatable-responsive .p-datatable-tbody > tr > td {
+    text-align: left;
+    display: block;
+    width: 100%;
+    float: left;
+    clear: left;
+    border: 0 none;
+  }
+
+  .dash_users .p-datatable.p-datatable-responsive .p-datatable-tbody > tr > td .p-column-title {
+    padding: .4rem;
+    min-width: 30%;
+    display: inline-block;
+    margin: -.4em 1em -.4em -.4rem;
+    font-weight: bold;
+  }
+
+  .dash_users .p-datatable.p-datatable-responsive .p-datatable-tbody > tr > td:last-child {
+    border-bottom: 1px solid var(--surface-d);
+  }
+}
+
+.form{
+  padding:20px;
+}
+
+.product-badge {
+  border-radius: 2px;
+  padding: .25em .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+}
+
+.product-badge.role-user {
+  background: #C8E6C9;
+  color: #256029;
+}
+
+.product-badge.role-observer {
+  background: #9c9f4c;
+  color: #e5d673;
+}
+.dash_users .p-text-center{
+  padding-top:10px;
+}
+
+

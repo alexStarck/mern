@@ -1,0 +1,98 @@
+.body{
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+
+.container{
+  //height: -webkit-fill-available;
+  //background-color: #ececec;
+  margin: 0;
+  padding: 0;
+  //width: 100vw;
+  //height: 100vh;
+
+
+
+
+  .module {
+    margin: 0 auto;
+    padding:0;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    width:100vw;
+    max-width: 100%;
+  }
+
+  .module__item {
+    align-items: center;
+    display: flex;
+    height: 10%;
+    justify-content: center;
+  }
+  .module__item2 {
+    align-items: center;
+    display: flex;
+    height: 90%;
+    justify-content: center;
+  }
+      .myMap1 {
+        margin:0;
+        padding:0;
+        height: 100%;
+        width: 100%;
+        .leaflet-container {
+          height: 100%;
+          width: 100%;
+        }
+      }
+  .dash_users{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+  }
+  .dash_terminals{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  //.p-grid{
+  //  margin: 0;
+  //  padding: 0;
+  //  width: 100vw;
+  //  height: 100vh;
+  //
+  //  //position: relative;
+  //  .p-col-fixed{
+  //    margin: 0;
+  //    padding: 0;
+  //    width: 100vw;
+  //    height: 80px;
+  //  }
+  //  .p-col{
+  //    margin: 0;
+  //    padding: 0;
+  //    height:100%;
+  //    width:100vw;
+  //    .myMap1 {
+  //      margin:0;
+  //      padding:0;
+  //      height: 100%;
+  //      width: 100%;
+  //      .leaflet-container {
+  //        height: 100%;
+  //        width: 100%;
+  //      }
+  //    }
+  //  }
+  //}
+
+
+
+
+
+}

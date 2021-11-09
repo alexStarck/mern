@@ -1,0 +1,142 @@
+.NavbarItems{
+  background: linear-gradient(90deg,#34495e 0%,#34495e 100%);
+  //height: 80px;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //font-size: 1.2rem;
+  overflow: hidden;
+  //background-color: #333;
+  //position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left:0;
+  width: 100%; /* Full width */
+
+
+}
+.p-sidebar-content{
+  margin:0;
+  //padding:0px;
+  padding-bottom: 0px;
+
+}
+
+
+.p-sidebar-top{
+
+  .p-sidebar-content{
+    //padding:15px;
+    //background-color: #2ecc71;
+  }
+}
+
+.side-content{
+  padding-top: 16px;
+  .p-col{
+    align-items:center;
+    text-align:center;
+    background-color: #2ecc71;
+    padding:0px;
+    margin:3px;
+    border: 4px solid #2ecc71;
+    border-radius: 25px;
+  }
+  .danger{
+    background-color: #e90c2e;
+    border: 4px solid #e90c2e;
+  }
+}
+
+
+.fa-react{
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu{
+  //position:absolute;
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: start;
+  width: 100vw;
+  justify-content: start;
+  margin-right: 2rem;
+}
+
+.nav-links{
+  color:white;
+  text-decoration: none;
+
+}
+
+.nav-links:hover{
+  background-color: #2ecc71;
+  border-radius: 4px;
+  transition: all 0.2s ease-out ;
+}
+
+.fa-bars{
+  color:white;
+}
+
+.nav-menu-mobile{
+  display:none;
+}
+
+.menu-icon{
+  display:none;
+}
+
+@media screen and (max-width: 960px){
+  .NavbarItems{
+    //position: relative;
+  }
+
+  .nav-menu{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    position:absolute;
+    top:80px;
+    left:-100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active{
+    position:absolute;
+    background: #6668f4;
+    left:0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index:1;
+  }
+
+  //.nav-links{
+  //  text-align: center;
+  //  padding: 2rem;
+  //  width: 100%;
+  //  display: table;
+  //}
+
+  //.nav-links:hover{
+  //  background-color: #7577fa;
+  //  border-radius: 0;
+  //}
+
+
+
+  .menu-icon{
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translate(-100%,60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+}
